@@ -1,0 +1,27 @@
+<ul class="fukol-grid">
+  <li>Grid item</li>
+  <li>Grid item</li>
+  <li>Grid item</li>
+</ul>
+
+<style>
+/* See:
+  https://github.com/Heydon/fukol-grids
+  http://codepen.io/heydon/pen/dpzwVd
+*/
+.fukol-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+}
+
+ul.fukol-grid {
+  padding: 0;
+  list-style: none;
+}
+
+.fukol-grid > * {
+  flex: 1 0 10em;
+  margin: 0.5em;
+}
+</style>

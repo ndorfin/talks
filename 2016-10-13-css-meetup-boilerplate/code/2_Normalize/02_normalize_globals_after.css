@@ -1,0 +1,19 @@
+/*
+  1. Enter your own values!
+  2. Select the fixes that apply to your project
+  3. Incorporate within your own selectors
+*/
+html {
+  font-family: "Open Sans", "ETC", sans-serif;
+  line-height: 1.25;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  /* etc */
+}
+
+body {
+  /* etc */
+}
+
+/* etc */

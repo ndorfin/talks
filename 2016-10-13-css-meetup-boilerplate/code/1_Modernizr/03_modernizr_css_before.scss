@@ -1,0 +1,7 @@
+.no-cssgradients {
+  header {background-color:image-url('poop.png');}
+}
+
+.cssgradients {
+  header {background-image:linear-gradient(top, #fff 0%, #ccd 100%);}
+}

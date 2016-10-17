@@ -1,0 +1,9 @@
+header {
+  background-image:image-url('poop.png');
+}
+
+@supports (background-image:linear-gradient()) {
+  header {
+    background-image:linear-gradient(top, #fff 0%, #ccd 100%);}
+  }
+}
