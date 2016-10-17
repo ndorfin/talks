@@ -1,4 +1,5 @@
 # You might not need… boilerplate.
+
 ## First, a little backstory
 
 5 years ago I applied for my dream job. A Front-end Engineering position at Blizzard Entertainment. Being an engineering position, I knew my sparse programming skills would be subjected to rigourous testing, and nowhere was this more apparent than the practical assignments they gave me as part of my interview process.
