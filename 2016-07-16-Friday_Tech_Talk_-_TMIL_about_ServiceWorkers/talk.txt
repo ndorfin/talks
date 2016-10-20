@@ -1,0 +1,60 @@
+Stuff to talk about:
+- What are ServiceWorkers?
+  - Anyone familiar or know what the HTML5 AppCache is?
+  - Interceptor
+  - Before Network
+  - Proxy
+  - Routing
+  - What you want them to be
+    - Imperative
+    - HTML5 AppCache not flexible enough. Declarative.
+  - They involve:
+    - Promises
+    - Doesn't use XHR!
+    - No CORS!
+    - Cache Objects
+    - Networking: fetch API, Response/Request Objects
+
+- What can ServiceWorkers do?
+  - Offline Cache
+  - Web Performance improvements
+  - Soon:
+    - Background Sync
+    - Push
+  - Insert idea here
+
+- Checklist
+  - HTTPS
+  - A good caching policy
+  - Intention / Scope
+
+- Stuff we did:
+  - Middleman Sitemap as a source of all resources
+  - Whitelisting and Blacklisting certain resources
+  - Environment-related config switches
+  - Lots of testing
+  - Prototyped Offline-cache of WellingtonICT
+  - Pre-caching all CSS, JS and HTML of Abletech.nz, and a progressive / incremental caching of Abletech.nz images
+
+- Gotchas
+  - Scope
+  - HTTP Cache-Control, No Cache-Control on service-worker.js.
+  - No asset-hashing on service-worker.js
+  - Many tabs / sessions = Crazy-talk!
+  - Incognito / Private Mode, not as useful as you'd think
+  - Mobile
+  - A note on Debugging / local environments
+
+- What's to like?
+  - Imperative nature
+  - Progressive enhancement!
+  - Plays well with existing APIs / technology
+  - Intelligent Client-Hints?
+  - Live Transpiling of ES6 to ES5!? https://github.com/bfgeek/swes6
+  - It's the future!
+
+- Links:
+  - Service worker status https://jakearchibald.github.io/isserviceworkerready/
+  - 15 minute intro video https://www.youtube.com/watch?v=4uQMl7mFB6g
+  - ServiceWorker Patterns https://jakearchibald.com/2014/offline-cookbook/
+  - ServiceWorker recipes https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker & https://serviceworke.rs/

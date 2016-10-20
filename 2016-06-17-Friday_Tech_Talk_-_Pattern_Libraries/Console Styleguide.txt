@@ -1,0 +1,54 @@
+# Console Styleguide
+
+## What is a pattern library
+
+- A collection of user interface patterns.
+- A way to document, visualise and test a user interface.
+- A self-contained showcase of the User Interface.
+
+## Why a Pattern Library
+
+Pros:
+
+- Implements a consistent UI
+- Fit for purpose CSS
+- Effective use of highly-unavailable Front-end Team
+- Testable, High Quality
+- Reusability
+
+Cons:
+
+- Takes time to setup and implement patterns initially
+- Other?
+
+## Origins
+
+### Kiwibank
+
+Kiwibank had 3 major consuming services, and they all needed a consistent UI.
+Also, there wasn't a dedicated Front-end Dev (aka Shaun) available for the project. So, maximise the use of Shaun's time.
+
+So, Kiwibank needed a shared set of SCSS, JavaScript, Fonts and Images across all the services that needed UIs.
+
+The solution came in two distinct forms:
+
+1. We created a repo that would contain the assets.
+2. We created a Middleman instance to visualise, edit, test and document those assets.
+
+### The Pattern Library
+
+First let's look at the Pattern Library.
+
+We used Middleman as the Pattern Library because it's familiar, has LiveReload and packages assets in a similar way to Rails apps.
+
+Middleman stores all the required HTML for each pattern and bundles the assets in a testable environment.
+
+The first incarnation was pretty simple. Flat files and simple data to describe and render each pattern.
+
+### The Assets
+
+The repo containing the assets is a simple and non-executable container for the SCSS, JS, Images and Fonts.
+
+This repo is deployed side-by-side and incorporated in the Middleman Pattern Library using symlinks. (Sorry Windows peeps!)
+
+For the consuming app side of things, Dawn prototyped the integration of the assets in the various apps. It uses `bower-rails`, and the assets are distributed as releases in a bower package.
