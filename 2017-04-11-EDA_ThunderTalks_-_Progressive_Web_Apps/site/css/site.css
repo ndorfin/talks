@@ -1,0 +1,24 @@
+/* Set element defaults */
+h1 {font-size:3rem;}
+h2 {font-size:2rem;}
+h3 {font-size:1.5rem;}
+h2,
+h3 {color:rgb(50,50,20); font-weight:600;}
+a {color:rgb(50,50,200);}
+html {background:rgb(230,230,230);}
+
+/* Describe site structure */
+body {font:16px/1.5 'Open Sans', Helvetica, Arial, sans-serif; margin:0 auto; max-width:60rem; color:rgb(80,80,80); background:rgb(255,255,255);}
+  body > header {background:rgb(233, 76, 62); color:#fff; box-shadow:inset 0 -5px 13px 2px rgba(0,0,0,.1);}
+    body > header > * {margin:0;}
+    body > header > h1 {text-shadow:2px 2px 7px rgba(0,0,0,.2);}
+    body > header > p {margin-top:1rem;}
+      body > header img {max-width:90px; border:rgb(255,255,255) solid .25rem; }
+  /*main {}*/
+  body > * {padding:1rem;}
+
+/* If there's enough space: fit the heading and logo on one line */
+@media (min-width:30rem) {
+  body > header > p {float:right; margin-top:-3.75rem;}
+  body > * {padding:1rem 2rem;}
+}
