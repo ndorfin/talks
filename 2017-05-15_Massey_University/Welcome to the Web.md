@@ -94,6 +94,17 @@ If you have any affinities with…
 
 …you'll find a niche in the web. So don't get dissuaded if your programming skills aren't up to scratch. We need wordsmiths as much as we need neckbeard programmers.
 
+And on the topic of coding, a web developer is more than just a coder.
+A good web developer writes good code, but a great web developer is a considerate, ego-less and responsible team player.
+
+A great website is one that:
+ - can be crawled by robots
+ - can be used by people with visual or learning impairments
+ - work on any device with a browser
+ - are tested before launch
+ - are efficient and speedy
+ - are reliable
+ - and many more
 
 Some inspiration:
  - WebVR
