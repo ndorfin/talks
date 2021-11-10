@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Responsive &lt;picture&gt;</title>
+<link rel="next" href="../06/index.html">
+<base href="https://ndorfin.github.io/simon-stalenhag/06-mobile-optimised/">
+<h1>
+  <code>picture</code>, enhanced.
+</h1>
+
+<picture>
+  <!-- Larger viewports -->
+  <source
+    media="(min-width: 584px)"
+    type="image/avif"
+    srcset="bilder/avif/ark_euromek.avif">
+
+  <source
+    media="(min-width: 584px)"
+    type="image/webp"
+    srcset="bilder/webp/ark_euromek.webp">
+
+  <source
+    media="(min-width: 584px)"
+    type="image/jpeg"
+    srcset="bilder/jpg/ark_euromek.jpg">
+
+  <!-- Smaller viewports -->
+  <source
+    type="image/avif"
+    srcset="bildersmall/avif/ark_euromek.avif">
+
+  <source
+    type="image/webp"
+    srcset="bildersmall/webp/ark_euromek.webp">
+
+  <!-- Fallback-->
+  <img 
+    loading="lazy"
+    alt
+    width="512" height="497"
+    src="bildersmall/jpg/ark_euromek.jpg">
+
+</picture>
+
+<p>
+  Don't forget to check out
+  <a href="https://squoosh.app">Squoosh.app</a>.
+  <abbr title="Prgoressive Web Apps">PWAs</abbr> baby!
+</p>

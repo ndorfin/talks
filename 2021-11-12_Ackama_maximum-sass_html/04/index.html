@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Newish HTML5 elements</title>
+<style>
+  article {background-color: #eee; padding: 1rem;}
+  article + article {margin-top: 3rem;}
+</style>
+<link rel="next" href="../05/index.html">
+<h1>These elements are awesome!</h1>
+
+
+
+
+
+
+
+
+
+
+
+<article>
+  <header>
+    <h2>
+      I see your list, and I raise you…<br>
+      <code>&lt;datalist&gt;</code>
+    </h2>
+  </header>
+
+  <datalist id="peeps">
+    <option label="Ariel Reyes">ariel
+    <option label="Ben Hart">ben
+    <option label="Cameron Hopkinson">cam
+    <option label="Dave Park">dave
+    <option label="Dimithri Abeygunawardane">dimithri
+    <option label="Emre Simtay">emre
+    <option label="Eoin Kelly">eoin
+    <option label="Gabrielle Young">gabrielle
+    <option label="Gareth Jones">gareth
+    <option label="Jacob Briggs">jacob
+    <option label="Josh MacArthur">joshm
+    <option label="Josh Ng">joshn
+    <option label="Justine Leonard">justine
+    <option label="Karyn Brice">karyn
+    <option label="Liliana Summers">liliana
+    <option label="Marley Mokomoko-Young">marley
+    <option label="Matías Halles">matias
+    <option label="Mischa Saunders">mischa
+    <option label="Rob Ramsay">rob
+    <option label="Shaun O’Connell">shaun
+    <option label="Sumith Samaraweerahetti">sumith
+    <option label="Suzanne Conkas">suzanne
+  </datalist>
+  <input type="text" list="peeps">
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article>
+  <header>
+    <h2>
+      It’s all in the…<br>
+      <code>&lt;details&gt;</code>
+    </h2>
+  </header>
+
+  <details>
+    <summary>I'm graceful!</summary>
+    <p>My contents are shown in browsers that don't support me</p>
+  </details>  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article>
+  <header>
+    <h2>
+      It's almost time we had that…<br>
+      <code>&lt;dialog&gt;</code>
+    </h2>
+  </header>
+
+  <form>
+    <p>
+      <label>
+        <input type="checkbox" id="modal"> Modal?
+      </label>
+    </p>
+    <button>
+      Open dialog
+    </button>
+  </form>
+
+  <dialog>
+    <header>
+      <h2>I'm a <code>dialog</code></h2>
+    </header>
+    <p>…and I'm <em>modal</em> or <em>modeless</em> depending on how you invoke me</p>
+    <form method="dialog">
+      <button>Cool</button>
+    </form>
+  </dialog>
+
+  <script>
+    document.querySelector('button').addEventListener('click', () => {
+      if (document.querySelector('#modal').checked) {
+        document.querySelector('dialog').showModal();
+      } else {
+        document.querySelector('dialog').setAttribute('open', '');
+      }
+    });
+  </script>
+</article>
