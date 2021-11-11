@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVGs</title>
+
+<svg
+  id="svg_sprite"
+  xmlns="http://www.w3.org/2000/svg" 
+  version="1.1" 
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="ref">
+    <path d="…"/>
+  </symbol>
+</svg>
+
+<!-- … -->
+
+<main>
+  <a href="/" class="icon_button">
+    <svg 
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1" 
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <title>Home</title>
+      <use xlink:href="#ref"/>
+    </svg>
+  </a>
+</main>
