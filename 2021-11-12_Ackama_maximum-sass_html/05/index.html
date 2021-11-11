@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <title>Responsive &lt;picture&gt;</title>
+<link rel="stylesheet" href="../css/defaults.css">
 <link rel="next" href="../06/index.html">
 <h1>
-  <code>picture</code>, enhanced.
+  <code>&lt;picture&gt;</code>, enhance!
 </h1>
+<p>Images from: <a href="https://ndorfin.github.io/simon-stalenhag/">Simon Stålenhag</a></p>
 
 <picture>
-  <!-- Images from: https://ndorfin.github.io/simon-stalenhag/ -->
   <!-- Larger viewports -->
   <source
-    media="(min-width: 584px)"
+    media="(min-width: 512px)"
     type="image/avif"
     srcset="ark_euromek.avif">
 
   <source
-    media="(min-width: 584px)"
+    media="(min-width: 512px)"
     type="image/webp"
     srcset="ark_euromek.webp">
 
   <source
-    media="(min-width: 584px)"
+    media="(min-width: 512px)"
     type="image/jpeg"
     srcset="ark_euromek.jpg">
 
@@ -37,7 +39,6 @@
   <img 
     loading="lazy"
     alt
-    width="512" height="497"
     src="ark_euromek_small.jpg">
 
 </picture>
@@ -45,5 +46,5 @@
 <p>
   Don't forget to check out
   <a href="https://squoosh.app">Squoosh.app</a>.
-  Hail <abbr title="Prgoressive Web Apps">PWAs</abbr>!
+  Aren‘t <abbr title="Prgoressive Web Apps">PWAs</abbr> great?!
 </p>

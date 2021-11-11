@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <title>Newish HTML5 elements</title>
-<style>
-  article {background-color: #eee; padding: 1rem;}
-  article + article {margin-top: 3rem;}
-</style>
+<link rel="stylesheet" href="../css/defaults.css">
 <link rel="next" href="../05/index.html">
 <h1>These elements are awesome!</h1>
 
@@ -108,7 +106,7 @@
     </h2>
   </header>
 
-  <form>
+  <form id="dialog_launcher">
     <p>
       <label>
         <input type="checkbox" id="modal"> Modal?
@@ -129,13 +127,17 @@
     </form>
   </dialog>
 
-  <script>
-    document.querySelector('button').addEventListener('click', () => {
-      if (document.querySelector('#modal').checked) {
-        document.querySelector('dialog').showModal();
-      } else {
-        document.querySelector('dialog').setAttribute('open', '');
-      }
-    });
-  </script>
 </article>
+
+<script>
+  document.addEventListener('submit', (event) => {
+    if (event.target.matches('#dialog_launcher')) {
+      event.preventDefault();
+      
+      let dialog = document.querySelector('dialog');
+      let checkbox = document.querySelector('#modal');
+      
+      checkbox.checked ? dialog.showModal() : dialog.setAttribute('open', '');
+    }
+  });
+</script>
