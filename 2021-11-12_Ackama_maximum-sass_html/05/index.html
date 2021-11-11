@@ -2,43 +2,43 @@
 <html lang="en">
 <title>Responsive &lt;picture&gt;</title>
 <link rel="next" href="../06/index.html">
-<base href="https://ndorfin.github.io/simon-stalenhag/06-mobile-optimised/">
 <h1>
   <code>picture</code>, enhanced.
 </h1>
 
 <picture>
+  <!-- Images from: https://ndorfin.github.io/simon-stalenhag/ -->
   <!-- Larger viewports -->
   <source
     media="(min-width: 584px)"
     type="image/avif"
-    srcset="bilder/avif/ark_euromek.avif">
+    srcset="ark_euromek.avif">
 
   <source
     media="(min-width: 584px)"
     type="image/webp"
-    srcset="bilder/webp/ark_euromek.webp">
+    srcset="ark_euromek.webp">
 
   <source
     media="(min-width: 584px)"
     type="image/jpeg"
-    srcset="bilder/jpg/ark_euromek.jpg">
+    srcset="ark_euromek.jpg">
 
   <!-- Smaller viewports -->
   <source
     type="image/avif"
-    srcset="bildersmall/avif/ark_euromek.avif">
+    srcset="ark_euromek_small.avif">
 
   <source
     type="image/webp"
-    srcset="bildersmall/webp/ark_euromek.webp">
+    srcset="ark_euromek_small.webp">
 
   <!-- Fallback-->
   <img 
     loading="lazy"
     alt
     width="512" height="497"
-    src="bildersmall/jpg/ark_euromek.jpg">
+    src="ark_euromek_small.jpg">
 
 </picture>
 
